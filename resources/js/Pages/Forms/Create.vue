@@ -2,6 +2,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import FormBuilder from "@/Components/FormBuilder.vue";
 import { useForm } from "@inertiajs/vue3";
+import { Head } from "@inertiajs/vue3";
 const submit = (event) => {
     useForm({
         form: event.formData,
@@ -9,6 +10,7 @@ const submit = (event) => {
 };
 </script>
 <template>
+    <Head title="Create a new form" />
     <AuthenticatedLayout>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">

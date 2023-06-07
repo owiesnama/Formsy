@@ -4,11 +4,9 @@ import GuestLayout from "@/Layouts/GuestLayout.vue";
 import FormRenderer from "@/Components/FormRenderer.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import SecondaryButton from "@/Components/SecondaryButton.vue";
-import { useForm, usePage } from "@inertiajs/vue3";
-import { computed } from "vue";
+import { useForm, usePage, Head } from "@inertiajs/vue3";
+import { computed, onMounted } from "vue";
 import ClipboardJS from "clipboard";
-import { onMounted } from "vue";
-import { ref } from "vue";
 
 const props = defineProps({
     form: {
@@ -29,10 +27,11 @@ const publish = (form) => {
     }).put(route(`forms.publish`, form.id));
 };
 onMounted(() => {
-    const clipboard = new ClipboardJS("#copy-form-link");
+    new ClipboardJS("#copy-form-link");
 });
 </script>
 <template>
+    <Head title="Viewing Form" />
     <component
         :is="layout"
         containerClasses="w-full sm:max-w-3xl mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg"

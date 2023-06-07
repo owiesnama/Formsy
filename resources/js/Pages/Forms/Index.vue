@@ -1,8 +1,7 @@
 <script setup>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import FormRenderer from "@/Components/FormRenderer.vue";
-import PrimaryButton from "@/Components/PrimaryButton.vue";
-import { Link } from "@inertiajs/vue3";
+import { Link , Head} from "@inertiajs/vue3";
 
 defineProps({
     forms: {
@@ -11,6 +10,7 @@ defineProps({
 });
 </script>
 <template>
+    <Head title="My Forms" />
     <AuthenticatedLayout>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
