@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FormsController;
+use App\Http\Controllers\FormSubmitionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublishFormController;
 use App\Models\Form;
@@ -34,6 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::put('/forms/{form}/publish', PublishFormController::class)->name('forms.publish');
 });
 Route::get('/forms/{form}', [FormsController::class, 'show'])->name('forms.show')->middleware("can:show,form");
+Route::post('/forms/{form}/submit', FormSubmitionController::class)->name('forms.submition');
 
 
 require __DIR__ . '/auth.php';

@@ -15,5 +15,5 @@ onMounted(() => {
 });
 </script>
 <template>
-    <form ref="formRoot"></form>
+    <div ref="formRoot"></div>
 </template>

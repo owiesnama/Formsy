@@ -15,7 +15,6 @@ const props = defineProps({
         required: true,
     },
 });
-const formRef = ref(null);
 const isOwningTheForm = computed(
     () => props.form.user.id === usePage().props.auth.user?.id
 );
@@ -29,19 +28,6 @@ const publish = (form) => {
         publish: !form.published_at,
     }).put(route(`forms.publish`, form.id));
 };
-const readFormData = () => {
-    const fragment = new DocumentFragment();
-    const onlyInputs = document.querySelectorAll("#my-form input");
-    onlyInputs.forEach((input) => {
-        console.log(input);
-    });
-};
-const submit = () => {
-    useForm({
-        submition: readFormData(),
-    }).post("forms.submition", props.form);
-};
-
 onMounted(() => {
     const clipboard = new ClipboardJS("#copy-form-link");
 });
@@ -110,11 +96,16 @@ onMounted(() => {
                         </SecondaryButton>
                     </div>
                     <form
-                        @submit.prevent="submit"
-                        ref="formRef"
-                        action="#"
+                        method="post"
+                        :action="route('forms.submition', form.id)"
                         class="sm:p-8"
+                        enctype="multipart/form-data"
                     >
+                        <input
+                            type="hidden"
+                            name="_token"
+                            :value="$page.props.csrf_token"
+                        />
                         <FormRenderer :form-data="form.form" />
                         <div class="text-right mt-4" v-if="!isOwningTheForm">
                             <PrimaryButton type="submit">Submit</PrimaryButton>

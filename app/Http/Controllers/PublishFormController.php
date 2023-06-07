@@ -12,7 +12,7 @@ class PublishFormController extends Controller
         $publish = request()->boolean('publish', false);
 
         $form->publish($publish);
-
-        return back()->with('success', 'Your form has been published');
+        $message = (!$publish) ? 'Your form has been published' : 'Your form has been un-published';
+        return back()->with('success', $message);
     }
 }

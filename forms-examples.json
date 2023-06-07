@@ -1,0 +1,205 @@
+{
+    "id": "65b22f9c-ceff-46a0-a6c4-79c4f7625368",
+    "rows": {
+        "69580bd9-c5f6-499b-ba7e-ae1394c129a5": {
+            "id": "69580bd9-c5f6-499b-ba7e-ae1394c129a5",
+            "config": {
+                "legend": null,
+                "fieldset": false,
+                "inputGroup": false
+            },
+            "children": ["5c061395-e7da-486c-a015-b6220aff5697"],
+            "className": ["formeo-row"]
+        },
+        "7c4fe580-19bd-4147-80e6-0f0a237a53dc": {
+            "id": "7c4fe580-19bd-4147-80e6-0f0a237a53dc",
+            "config": {
+                "legend": null,
+                "fieldset": false,
+                "inputGroup": false
+            },
+            "children": ["55b56281-0d7a-4794-82f1-8962bf610950"],
+            "className": ["formeo-row"]
+        },
+        "8cebdb7e-1a34-4686-8975-ad9f626b5c29": {
+            "id": "8cebdb7e-1a34-4686-8975-ad9f626b5c29",
+            "config": {
+                "legend": null,
+                "fieldset": false,
+                "inputGroup": false
+            },
+            "children": ["a55aad6d-1c75-470b-b5a8-914e670baf44"],
+            "className": ["formeo-row"]
+        },
+        "affd3122-e980-48ae-89e5-244e5f89ac02": {
+            "id": "affd3122-e980-48ae-89e5-244e5f89ac02",
+            "config": {
+                "legend": null,
+                "fieldset": false,
+                "inputGroup": false
+            },
+            "children": ["d6c5829e-e49c-4a09-9fa4-009a83f495f3"],
+            "className": ["formeo-row"]
+        }
+    },
+    "fields": {
+        "479ba196-06e8-4d15-9074-c901d6685275": {
+            "id": "479ba196-06e8-4d15-9074-c901d6685275",
+            "tag": "input",
+            "meta": { "id": "number", "icon": "hash", "group": "common" },
+            "attrs": { "type": "number", "required": false, "className": null },
+            "config": { "label": "Number" },
+            "conditions": [
+                {
+                    "if": [
+                        {
+                            "source": null,
+                            "target": null,
+                            "comparison": "equals",
+                            "sourceProperty": "value",
+                            "targetProperty": "value"
+                        }
+                    ],
+                    "then": [
+                        {
+                            "value": null,
+                            "target": null,
+                            "assignment": "equals",
+                            "targetProperty": "value"
+                        }
+                    ]
+                }
+            ]
+        },
+        "9020b403-a4e2-499f-8a52-acfe6316eb29": {
+            "id": "9020b403-a4e2-499f-8a52-acfe6316eb29",
+            "tag": "input",
+            "meta": {
+                "id": "text-input",
+                "icon": "text-input",
+                "group": "common"
+            },
+            "attrs": { "type": "text", "required": false, "className": null },
+            "config": { "label": "Text Input" },
+            "conditions": [
+                {
+                    "if": [
+                        {
+                            "source": null,
+                            "target": null,
+                            "comparison": "equals",
+                            "sourceProperty": "value",
+                            "targetProperty": "value"
+                        }
+                    ],
+                    "then": [
+                        {
+                            "value": null,
+                            "target": null,
+                            "assignment": "equals",
+                            "targetProperty": "value"
+                        }
+                    ]
+                }
+            ]
+        },
+        "9fa481e8-3c2c-4fd6-b70b-b125f7987a91": {
+            "id": "9fa481e8-3c2c-4fd6-b70b-b125f7987a91",
+            "tag": "textarea",
+            "meta": { "id": "textarea", "icon": "textarea", "group": "common" },
+            "attrs": { "required": false },
+            "config": { "label": "TextArea" },
+            "conditions": [
+                {
+                    "if": [
+                        {
+                            "source": null,
+                            "target": null,
+                            "comparison": "equals",
+                            "sourceProperty": "value",
+                            "targetProperty": "value"
+                        }
+                    ],
+                    "then": [
+                        {
+                            "value": null,
+                            "target": null,
+                            "assignment": "equals",
+                            "targetProperty": "value"
+                        }
+                    ]
+                }
+            ]
+        },
+        "df8df749-c51c-4e44-b0c1-a9a78346f950": {
+            "id": "df8df749-c51c-4e44-b0c1-a9a78346f950",
+            "tag": "input",
+            "meta": { "id": "radio", "icon": "radio-group", "group": "common" },
+            "attrs": { "type": "radio", "required": false },
+            "config": { "label": "Radio Group", "disabledAttrs": ["type"] },
+            "options": [
+                { "label": "Radio 1", "value": "radio-1", "selected": false },
+                { "label": "Radio 2", "value": "radio-2", "selected": false },
+                { "label": "Radio 3", "value": "radio-3", "selected": false }
+            ],
+            "conditions": [
+                {
+                    "if": [
+                        {
+                            "source": null,
+                            "target": null,
+                            "comparison": "equals",
+                            "sourceProperty": "value",
+                            "targetProperty": "value"
+                        }
+                    ],
+                    "then": [
+                        {
+                            "value": null,
+                            "target": null,
+                            "assignment": "equals",
+                            "targetProperty": "value"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "stages": {
+        "11711f0e-d1e6-43d7-ae50-a6813a600de9": {
+            "id": "11711f0e-d1e6-43d7-ae50-a6813a600de9",
+            "children": [
+                "affd3122-e980-48ae-89e5-244e5f89ac02",
+                "8cebdb7e-1a34-4686-8975-ad9f626b5c29",
+                "7c4fe580-19bd-4147-80e6-0f0a237a53dc",
+                "69580bd9-c5f6-499b-ba7e-ae1394c129a5"
+            ]
+        }
+    },
+    "columns": {
+        "55b56281-0d7a-4794-82f1-8962bf610950": {
+            "id": "55b56281-0d7a-4794-82f1-8962bf610950",
+            "config": { "width": "100%" },
+            "children": ["9020b403-a4e2-499f-8a52-acfe6316eb29"],
+            "className": "formeo-column"
+        },
+        "5c061395-e7da-486c-a015-b6220aff5697": {
+            "id": "5c061395-e7da-486c-a015-b6220aff5697",
+            "config": { "width": "100%" },
+            "children": ["df8df749-c51c-4e44-b0c1-a9a78346f950"],
+            "className": "formeo-column"
+        },
+        "a55aad6d-1c75-470b-b5a8-914e670baf44": {
+            "id": "a55aad6d-1c75-470b-b5a8-914e670baf44",
+            "config": { "width": "100%" },
+            "children": ["479ba196-06e8-4d15-9074-c901d6685275"],
+            "className": "formeo-column"
+        },
+        "d6c5829e-e49c-4a09-9fa4-009a83f495f3": {
+            "id": "d6c5829e-e49c-4a09-9fa4-009a83f495f3",
+            "config": { "width": "100%" },
+            "children": ["9fa481e8-3c2c-4fd6-b70b-b125f7987a91"],
+            "className": "formeo-column"
+        }
+    }
+}

@@ -17,7 +17,12 @@ class Form extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function publish($publish = false)
+    public function submitions()
+    {
+        return $this->hasMany(Submition::class);
+    }
+
+    public function publish($publish = true)
     {
         $this->published_at = $publish ? Carbon::now() : null;
         $this->save();
