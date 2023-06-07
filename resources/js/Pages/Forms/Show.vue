@@ -39,10 +39,10 @@ onMounted(() => {
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
                 <div
-                    class="bg-white shadow-sm my-4 sm:rounded-lg w-1/3 sm:w-full"
+                    class="bg-white shadow-sm my-4 sm:rounded-lg md:w-full mx-2 p-2 md:mx-0 md:p-0 sm:w-full"
                 >
                     <div
-                        class="p-8 text-right flex items-center space-x-2 justify-end"
+                        class="md:p-8 p-1 text-right flex items-center space-x-2 justify-end"
                         v-if="isOwningTheForm"
                     >
                         <SecondaryButton @click="publish(form)">{{

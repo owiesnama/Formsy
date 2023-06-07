@@ -15,10 +15,10 @@ const submit = (event) => {
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
                 <div
-                    class="bg-white shadow-sm my-4 sm:rounded-lg w-1/3 sm:w-full"
+                    class="bg-white shadow-sm my-4 sm:rounded-lg  sm:w-full"
                 >
-                    <form action="" class="p-4 sm:p-8">
-                        <FormBuilder @saved="submit"></FormBuilder>
+                    <form action="" class="p-4 sm:p-8 overflow-scroll">
+                        <FormBuilder class="min-w-[450px]" @saved="submit"></FormBuilder>
                     </form>
                 </div>
             </div>

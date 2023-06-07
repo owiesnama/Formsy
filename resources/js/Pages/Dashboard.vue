@@ -21,10 +21,10 @@ defineProps(["forms"]);
                 <div
                     v-for="form in forms.data"
                     :key="form.id"
-                    class="bg-white shadow-sm my-4 sm:rounded-lg w-1/3 sm:w-full relative max-h-[300px] overflow-hidden"
+                    class="p-2 md:mx-0 md:p-0 bg-white shadow-sm my-4 sm:rounded-lg w-full relative max-h-[300px] overflow-hidden"
                 >
                     <div
-                        class="absolute mx-auto mb-0 bottom-0 bg-gradient-to-t from-gray-50 h-[200px] w-1/3 sm:w-full flex items-end justify-center z-10"
+                        class="absolute mb-0 bottom-0 bg-gradient-to-t from-gray-50 h-[200px] -mx-2 w-full flex items-end justify-center z-10"
                     >
                         <Link
                             :href="route('forms.show', form.id)"
