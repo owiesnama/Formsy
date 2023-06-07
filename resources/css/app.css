@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+label {
+    @apply block font-semibold leading-8;
+}
+input,
+textarea,
+select,
+[type="number"],
+[type="date"] {
+    @apply block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring;
+}
+.form-actions.f-btn-group > .clear-form {
+    @apply inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150;
+}
+
+.form-actions.f-btn-group > .save-form {
+    @apply inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150;
+}
+.formeo-row-wrap {
+    @apply mb-4;
+}
+.f-radio,
+.f-checkbox {
+    @apply flex items-center p-2;
+}
+.f-radio > label,
+.f-checkbox > label {
+    @apply inline-block ml-2;
+}
+
+.f-radio > input,
+.f-checkbox > input {
+    @apply inline-block m-0;
+}
+input[type="file"] {
+    @apply text-sm text-gray-500 h-16
+    file:mr-5 file:py-2 file:px-6
+    file:rounded-full file:border-0
+    file:text-sm file:font-medium
+    file:bg-blue-50 file:text-blue-700
+    hover:file:cursor-pointer hover:file:bg-amber-50
+    hover:file:text-amber-700;
+}
