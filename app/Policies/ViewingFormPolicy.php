@@ -9,6 +9,6 @@ class ViewingFormPolicy
 {
     public function show(?User $user, Form $form): bool
     {
-        return true || $form->user()->is($user) || $form->published_at;
+        return $form->user()->is($user) || $form->published_at;
     }
 }
